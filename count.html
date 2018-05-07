@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title></title>
+</head>
+<body>
+
+
+<script>
+var arr = [0,2,3,4,4,0,2];
+var obj = {};
+var tmp = [];
+for(var i in arr){
+	if(!obj[arr[i]]){
+		obj[arr[i]] = 1;
+		tmp.push(arr[i]);
+	}
+}
+console.log(tmp);
+
+var str = 'asdsaasd';
+var json = {};
+for(var i in str){
+	if(!json[str[i]]){
+		json[str[i]]=1;
+	}
+	else{
+		json[str[i]]++
+	}
+}
+console.log(json);
+</script>
+
+</body>
+</html>
